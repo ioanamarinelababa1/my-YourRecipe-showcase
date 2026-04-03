@@ -31,7 +31,8 @@ Work in progress (full implementation available in a private repository)
 - Account deletion with complete data removal
 - Feedback & issue reporting system
 - Responsive UI with custom design (header, footer, layout)
-- responsive design complet
+- Responsive design complet
+- Admin image management — upload or replace recipe images via URL or file upload, persisted in Supabase Storage
 
 ---
 
@@ -63,6 +64,8 @@ Work in progress (full implementation available in a private repository)
 - Automatic profile creation via database trigger
 - Cascade delete — complete data removal on account deletion
 - Foreign key constraints on all relational tables
+- Admin role system via dedicated admins table — role-based access control for privileged operations
+- Recipe images protected by RLS — only admin can upload, update or delete images
 
 ### Frontend Security
 - XSS protection: escapeHTML() global sanitizer on all user inputs
@@ -128,11 +131,10 @@ Users can:
 ---
 
 ## 🗄️ Database Architecture
-- 12 PostgreSQL tables with Row Level Security (RLS)
-- Automatic profile creation via database triggers
+- 14 PostgreSQL tables with RLS (added: recipe_images, admins)- Automatic profile creation via database triggers
 - Cascade delete for complete data removal
 - Foreign key constraints on all tables
-
+  
 ---
 
 ## 🚀 Next Improvements
