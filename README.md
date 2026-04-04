@@ -1,16 +1,16 @@
-# 🍽️ YourRecipe (Showcase)
+# YourRecipe (Showcase)
 
-## 📌 Overview
+## Overview
 YourRecipe is a digital cooking journal web application that allows users to explore cooking-related content and create their own personalized recipes and notes.
 
 The application focuses on usability, data persistence, and security, offering users a structured and interactive way to manage their cooking ideas.
 
-## 🚧 Status
+## Status
 Work in progress (full implementation available in a private repository)
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 - HTML, CSS, JavaScript
 - Node.js (local development server)
 - PostgreSQL (database)
@@ -27,7 +27,7 @@ Work in progress (full implementation available in a private repository)
 
 ---
 
-## ✨ Features
+## Features
 - User authentication (login & registration)
 - Email verification system
 - Add, edit, and delete personal recipes
@@ -41,7 +41,7 @@ Work in progress (full implementation available in a private repository)
 
 ---
 
-## 🔐 Security
+## Security
 
 ### Authentication & Authorization
 - OAuth 2.0 Google Authentication via Supabase
@@ -90,7 +90,18 @@ Work in progress (full implementation available in a private repository)
 
 ---
 
-## 🛡 Advanced Security (Planned)
+## Backend Architecture
+
+- Express.js REST API running on port 3001
+- Supabase service key secured in server/.env — never exposed to browser
+- Routes: /api/auth, /api/recipes, /api/email
+- Middleware: rate limiting, admin-only protection
+- Recipes loaded via backend API — not directly from browser
+- Health check endpoint: GET /api/status
+
+---
+
+## Advanced Security (Planned)
 - Performing basic security testing (penetration testing principles)
 - Identifying and mitigating common vulnerabilities (OWASP Top 10)
 - Improving API security and access control mechanisms
@@ -101,7 +112,7 @@ Work in progress (full implementation available in a private repository)
 - Secure storage of sensitive data (environment variables, secrets)
 
 ---
-## 🎨 UI / UX
+## UI / UX
 - Clean and modern interface
 - Warm color palette
 - Structured layout for intuitive navigation
@@ -111,7 +122,7 @@ Work in progress (full implementation available in a private repository)
 
 ---
 
-## 🧠 What I’m Learning
+## What I’m Learning
 - Full-stack web development fundamentals
 - Authentication & security best practices
 - Database design and integration (PostgreSQL)
@@ -122,7 +133,7 @@ Work in progress (full implementation available in a private repository)
 
 ---
 
-## 💬 System
+## System
 Users can:
 - Send reviews
 - Report bugs or issues
@@ -135,7 +146,7 @@ Users can:
   
 ---
 
-## 🗄️ Database Architecture
+## Database Architecture
 - 15 PostgreSQL tables with RLS (added: recipe_images, admins)- Automatic profile creation via database triggers
 - 152 recipes migrated from static JavaScript to PostgreSQL (recipes_catalog)
 - Cascade delete for complete data removal
@@ -143,7 +154,7 @@ Users can:
   
 ---
 
-## 🚀 Next Improvements
+## Next Improvements
 - Advanced search functionality
 - AI-based recipe suggestions
 - Performance optimization
@@ -152,7 +163,7 @@ Users can:
 
 ---
 
-## ☁️ Future Infrastructure & Security Improvements
+## Future Infrastructure & Security Improvements
 - Deployment in a cloud environment (e.g., AWS / Azure / GCP)
 - Implementation of scalable and highly available architecture
 - Secure configuration of cloud resources (networking, access control)
@@ -160,7 +171,7 @@ Users can:
 
 ---
 
-## 🔒 Note
+## Note
 The full source code is maintained in a private repository for security and intellectual property protection.
 
 © 2026 YourRecipe. 
