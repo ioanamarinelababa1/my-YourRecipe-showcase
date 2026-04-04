@@ -20,6 +20,7 @@ Work in progress (full implementation available in a private repository)
 - iTerm2 (development environment)
 - Cloudflare Turnstile (bot protection)
 - VS Code (programming)
+- Dynamic recipe catalog via Supabase (migrated from static JavaScript)
 
 ---
 
@@ -133,6 +134,7 @@ Users can:
 
 ## 🗄️ Database Architecture
 - 15 PostgreSQL tables with RLS (added: recipe_images, admins)- Automatic profile creation via database triggers
+- 152 recipes migrated from static JavaScript to PostgreSQL (recipes_catalog)
 - Cascade delete for complete data removal
 - Foreign key constraints on all tables
   
@@ -142,6 +144,8 @@ Users can:
 - Advanced search functionality
 - AI-based recipe suggestions
 - Performance optimization
+- Loading state optimization for Supabase recipe fetching
+- Recipe order persistence from database
 
 ---
 
