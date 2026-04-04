@@ -71,6 +71,8 @@ Work in progress (full implementation available in a private repository)
 - Foreign key constraints on all relational tables
 - Admin role system via dedicated admins table — role-based access control for privileged operations
 - Recipe images protected by RLS — only admin can upload, update or delete images
+- Secure storage of sensitive data (environment variables, secrets)
+
 
 ### Frontend Security
 - XSS protection: escapeHTML() global sanitizer on all user inputs
@@ -92,12 +94,20 @@ Work in progress (full implementation available in a private repository)
 
 ## Backend Architecture
 
-- Express.js REST API running on port 3001
 - Supabase service key secured in server/.env — never exposed to browser
 - Routes: /api/auth, /api/recipes, /api/email
 - Middleware: rate limiting, admin-only protection
 - Recipes loaded via backend API — not directly from browser
 - Health check endpoint: GET /api/status
+
+---
+
+### Backend & API Security
+- Backend API layer (Node.js + Express) separating frontend from database
+- Admin-only middleware protecting sensitive endpoints
+- Server-side rate limiting via express-rate-limit (5 req/15min login, 100 req/15min general)
+- CORS configured to accept only trusted origins
+- Helmet.js security headers on all API responses
 
 ---
 
@@ -109,8 +119,7 @@ Work in progress (full implementation available in a private repository)
 - Two-Factor Authentication (2FA)
 - Secure API design and protection against common attacks
 - Protection against SQL Injection
-- Secure storage of sensitive data (environment variables, secrets)
-
+  
 ---
 ## UI / UX
 - Clean and modern interface
