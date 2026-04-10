@@ -1,13 +1,15 @@
 # Culinardea (Showcase)
-## ! For branding point of view I renamed the app from YourRecipe to Culinardea.
-
-## Status
-https://culinardea.app/
 
 ## Overview
 Culinardea is a digital cooking journal web application that allows users to explore cooking-related content and create their own personalized recipes and notes.
 
 The application focuses on usability, data persistence, and security, offering users a structured and interactive way to manage their cooking ideas.
+
+## Status
+https://culinardea.app/
+
+## ! For branding point of view I renamed the app from YourRecipe to Culinardea.
+
 
 ---
 
