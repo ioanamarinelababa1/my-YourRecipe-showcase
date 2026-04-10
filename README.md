@@ -121,6 +121,15 @@ Work in progress (full implementation available in a private repository)
 - Protection against SQL Injection
   
 ---
+
+## PWA — Progressive Web App
+- Installable on iPhone and Android as native app
+- Offline support via Service Worker cache
+- Custom theme color and splash screen
+- Apple mobile web app optimized
+
+---
+
 ## UI / UX
 - Clean and modern interface
 - Warm color palette
