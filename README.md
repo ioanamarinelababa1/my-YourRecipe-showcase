@@ -10,6 +10,13 @@ https://culinardea.app/
 
 ---
 
+## Preview
+
+<img width="1434" height="773" alt="Captură de ecran din 2026-04-12 la 12 55 08" src="https://github.com/user-attachments/assets/1b2b03ce-e233-4558-bd35-83a361aa3f1b" />
+
+
+---
+
 ## What makes it different
 
 - Recipe filtering system
@@ -18,9 +25,11 @@ https://culinardea.app/
 
 ---
 
-## Main Page
+## Why this project
 
-<img width="1434" height="773" alt="Captură de ecran din 2026-04-12 la 12 55 08" src="https://github.com/user-attachments/assets/1b2b03ce-e233-4558-bd35-83a361aa3f1b" />
+Recipe applications are often cluttered or hard to navigate.
+
+Culinardea focuses on simplicity, usability, and fast interaction to improve the user experience.
 
 ---
 
