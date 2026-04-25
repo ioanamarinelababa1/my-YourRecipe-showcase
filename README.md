@@ -14,7 +14,6 @@ https://culinardea.app/
 
 <img width="1434" height="773" alt="Captură de ecran din 2026-04-12 la 12 55 08" src="https://github.com/user-attachments/assets/1b2b03ce-e233-4558-bd35-83a361aa3f1b" />
 
-
 ---
 
 ## What makes it different
@@ -33,20 +32,23 @@ Culinardea focuses on simplicity, usability, and fast interaction to improve the
 
 ---
 
-## Tech Stack
-- HTML, CSS, JavaScript
-- Node.js (local development server)
-- PostgreSQL (database)
-- Supabase (backend services & database management)
-- Docker (containerization)
-- Git / GitHub (version control)
-- iTerm2 (development environment)
-- Cloudflare Turnstile (bot protection)
-- VS Code (programming)
-- Dynamic recipe catalog via Supabase (migrated from static JavaScript)
-- Node.js + Express (backend API server, port 3001)
-- Nodemailer (email service — configured)
-- dotenv (environment variables management)
+## Running Locally
+
+### With Docker (recommended):
+1. Install Docker Desktop
+2. cd ~/Desktop/Culinardea
+3. docker build -t culinardea .
+4. docker run -d -p 8090:8090 -p 3007:3007 --name culinardea-app culinardea
+5. Open http://localhost:8090
+
+### Without Docker:
+1. npm install
+2. Terminal 1 — Frontend: node server.js (port 8090)
+3. Terminal 2 — Backend: npm run server (port 3007)
+4. Open http://localhost:8090
+
+### Rebuild after changes:
+docker stop culinardea-app && docker rm culinardea-app && docker build -t culinardea . && docker run -d -p 8090:8090 -p 3007:3007 --name culinardea-app culinardea
 
 ---
 
@@ -180,17 +182,6 @@ Culinardea focuses on simplicity, usability, and fast interaction to improve the
 
 ---
 
-## What I’m Learning
-- Full-stack web development fundamentals
-- Authentication & security best practices
-- Database design and integration (PostgreSQL)
-- Containerization using Docker
-- Debugging and problem solving
-- Designing and UX
-- How to manage security problems
-
----
-
 ## System
 Users can:
 - Send reviews
@@ -210,6 +201,23 @@ Users can:
 - Cascade delete for complete data removal
 - Foreign key constraints on all tables
   
+---
+
+## Tech Stack
+- HTML, CSS, JavaScript
+- Node.js (local development server)
+- PostgreSQL (database)
+- Supabase (backend services & database management)
+- Docker (containerization)
+- Git / GitHub (version control)
+- iTerm2 (development environment)
+- Cloudflare Turnstile (bot protection)
+- VS Code (programming)
+- Dynamic recipe catalog via Supabase (migrated from static JavaScript)
+- Node.js + Express (backend API server, port 3001)
+- Nodemailer (email service — configured)
+- dotenv (environment variables management)
+
 ---
 
 ## Next Improvements
